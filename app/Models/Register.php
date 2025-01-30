@@ -13,4 +13,8 @@ class Register extends Model
         'course_id',
         'grade'
     ];
+    public function student()
+    {
+        return $this->belongsTo(Student::class);
+    }
 }

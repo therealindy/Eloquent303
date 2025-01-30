@@ -14,4 +14,8 @@ class CustomerHoteldel extends Model
         'Customerphone',
         'address'
     ];
+    public function bookings()
+    {
+        return $this->hasMany(Booking::class);
+    }
 }

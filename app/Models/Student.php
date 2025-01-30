@@ -14,4 +14,8 @@ class Student extends Model
         'Email',
         'Phone',
     ];
+    public function registers()
+    {
+        return $this->hasMany(Register::class);
+    }
 }
